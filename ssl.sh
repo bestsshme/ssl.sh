@@ -34,8 +34,8 @@ END
 
 #membuat sertifikat
 openssl genrsa -out key.pem 2048
-openssl req -new -x509 -key key.pem -out cert.pem -days 1095 \
--subj "/C=SG/ST=Best-ssh.me/L=Best-ssh.me/O=Best-ssh.me/OU=Best-ssh.me/CN=Best-ssh.me/emailAddress=admin@best-ssh.me"
+openssl req -new -x509 -key key.pem -out cert.pem -days 1095
+
 cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 
 #konfigurasi stunnel

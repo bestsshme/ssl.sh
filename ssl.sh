@@ -1,3 +1,11 @@
+#detail nama perusahaan
+country=SG
+state=best-ssh.me
+locality=best-ssh.me
+organization=best-ssh.me
+organizationalunit=SG
+commonname=best-ssh.me
+email=admin@best-ssh.me
 
 # install stunnel
 apt-get install stunnel4 -y

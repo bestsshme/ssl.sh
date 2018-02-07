@@ -16,6 +16,9 @@ email=admin@best-ssh.me
 # go to root
 cd
 
+curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key
+
+
 # install stunnel
 apt-get install stunnel4 -y
 cat > /etc/stunnel/stunnel.conf <<-END
@@ -34,8 +37,9 @@ END
 
 #membuat sertifikat
 openssl genrsa -out key.pem 2048
-openssl req -new -x509 -key key.pem -out cert.pem -days 1095
-
+openssl req -new -x509 -key key.pem -out cert.pem -days 1095 \
+-subj
+"/C=$country/ST=$state/L=$locality/O=$organization/OU=$organizationalunit/CN=$commonname/emailAddress=$email"
 cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 
 #konfigurasi stunnel

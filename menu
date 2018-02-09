@@ -482,6 +482,10 @@ break
 	 echo "Squid3 sudah di restart boss!!!" 
 	 break
 	 ;;
+	      "Aktifkan SSL/TLS")
+	 ./ssl.sh
+	 break
+	 ;;
 	 "Delete User Expire")
 	 ./delete-user-expire.sh
 	 break

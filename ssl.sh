@@ -7,6 +7,8 @@ organizationalunit=SG
 commonname=Best-ssh.me
 email=admin@best-ssh.me
 
+# go to root
+cd
 
 # install stunnel
 apt-get install stunnel4 -y

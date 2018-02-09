@@ -272,9 +272,10 @@ mv ./bannermenu /root/bannermenu
 chmod +x /root/bannermenu
 
 # delete user expire
+cd
 wget -O delete-user-expire.sh "http://centos6.esy.es/file/delete-user-expire"
-#mv ./delete-user-expire.sh /usr/bin/delete-user-expire.sh
-#chmod +x /usr/bin/delete-user-expire.sh
+mv ./delete-user-expire.sh /usr/bin/delete-user-expire.sh
+chmod +x /usr/bin/delete-user-expire.sh
 
 # update script vps
 cd
@@ -366,7 +367,7 @@ echo "Webmin   : http://$myip:10000/"
 echo "Squid3   : 8080" 
 echo "OpenSSH  : 22," 
 echo "Dropbear : 80, 777"
-echo "Port SSL  : 443"
+echo "SSL/TLS  : 443"
 echo "OpenVPN  : TCP Port 55 (client config : http://$myip:81/1194-client.ovpn)" 
 echo "Timezone : Asia/Jakarta"
 echo "Fail2Ban : [on]"

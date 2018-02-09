@@ -12,7 +12,7 @@ if [ $USER != 'root' ]; then
 	exit
 fi
 echo "
-AUTOSCRIPT BY Dahlaz Mrai
+AUTOSCRIPT BY Jucky vengeance
 
 PLEASE CANCEL ALL PACKAGE POPUP
 

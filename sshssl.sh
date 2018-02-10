@@ -278,9 +278,9 @@ chmod +x ssl.sh
 
 
 # delete user expire
-cd
 wget -O delete-user-expire.sh "http://centos6.esy.es/file/delete-user-expire"
 chmod +x delete-user-expire.sh
+chmod +x ./delete-user-expire.sh
 
 
 # update script vps

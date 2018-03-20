@@ -282,6 +282,12 @@ wget -O delete-user-expire.sh "http://centos6.esy.es/file/delete-user-expire"
 chmod +x delete-user-expire.sh
 chmod +x ./delete-user-expire.sh
 
+# badvpn
+cd /usr/bin
+wget "https://raw.githubusercontent.com/bestsshme/ssl.sh/master/fixbad.sh"
+chmod +x fixbad.sh
+chmod +x ./fixbad.sh
+
 
 # update script vps
 cd

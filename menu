@@ -492,12 +492,7 @@ break
 	 echo "user kadaluarsa berhasil di hapus.....!!!"
 	 break
 	 ;;
-	 "Delete User Expire")
-	 cd /ur/bin
-	 ./fixbad.sh
-	 echo "UDPGW berhasil di install dengan port 7200/7300..!!!"
-	 break
-	 ;;
+	 
 	 "Update Script VPS")
 	 /usr/local/bin/menu-update-script-vps.sh
 	 break

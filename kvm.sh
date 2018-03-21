@@ -17,7 +17,7 @@ locality=Jakarta
 organization=JAGOANSSH.COM
 organizationalunit=ID
 commonname=JAGOANSSH.COM
-email= admin@JAGOANSSH.COM
+email=admin@JAGOANSSH.COM
 
 # go to root
 cd

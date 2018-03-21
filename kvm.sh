@@ -14,10 +14,10 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 country=ID
 state=Jakarta
 locality=Jakarta
-organization=JAGOANSSH
+organization=JAGOANSSH.COM
 organizationalunit=ID
-commonname=JAGOANSSH
-email=bustami.admin@JAGOANSSH.COM
+commonname=JAGOANSSH.COM
+email= admin@JAGOANSSH.COM
 
 # go to root
 cd

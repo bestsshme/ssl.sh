@@ -1,11 +1,11 @@
 #detail nama perusahaan
-country=SG
-state=Best-ssh.me
+country=ID
+state=JAGOANSSH.COM
 locality=Best-ssh.me
-organization=Best-ssh.me
-organizationalunit=SG
-commonname=Best-ssh.me
-email=admin@best-ssh.me
+organization=JAGOANSSH.COM
+organizationalunit=JUCKY
+commonname=JAGOANSSH.COM
+email=JAGOANSSH.COM
 
 # go to root
 cd

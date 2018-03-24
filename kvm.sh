@@ -154,24 +154,6 @@ sed -i 's/Port 22/Port  22/g' /etc/ssh/sshd_config
 #sed -i 's/#ListenAddress 0.0.0.0/ListenAddress 0.0.0.0:80/g' /etc/ssh/sshd_config
 service ssh restart
 
-# install dropbear
-#apt-get install dropbear
-#apt-get install zlib1g-dev
-#wget "https://raw.githubusercontent.com/danangtrihermansyah/premium/master/dropbear201674/dropbear-2016.74.tar.bz2"
-#bzip2 -cd dropbear-2016.74.tar.bz2 | tar xvf -
-#cd dropbear-2016.74
-#./configure
-#make && make install
-#mv /usr/sbin/dropbear /usr/sbin/dropbear1
-#ln /usr/local/sbin/dropbear /usr/sbin/dropbear
-#service dropbear restart
-apt-get install dropbear
-sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=3128/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 80 -p 777"/g' /etc/default/dropbear
-echo "/bin/false" >> /etc/shells
-service ssh restart
-service dropbear restart
 
 # bannerssh
 wget -O bannersshlink.sh "https://raw.githubusercontent.com/danangtrihermansyah/premium/master/menu/bannersshlink.sh"

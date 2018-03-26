@@ -1,9 +1,9 @@
 #detail nama perusahaan
 country=ID
 state=JAGOANSSH.COM
-locality=Best-ssh.me
+locality=JAGOANSSH.COM
 organization=JAGOANSSH.COM
-organizationalunit=JUCKY
+organizationalunit=JAGOANSSH.COM
 commonname=JAGOANSSH.COM
 email=JAGOANSSH.COM
 
